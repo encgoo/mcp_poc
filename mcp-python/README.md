@@ -28,7 +28,7 @@ This means the VS Code needs to start up the MCP server.
 	"inputs": []
 }
 ```
-This means the MCP server can be started outside VS Code, by terminal for example. 
+This means the MCP server can be started outside VS Code, by terminal for example, in `D:\Development\git\mcp_poc\mcp-python` folder. (This example needs uv).
 ```bash
 uv run main.py
 ```
