@@ -2,6 +2,8 @@
 ## Config
 Need vs code 1.102
 
+## Simuple golang MCP server
+This [MCP server](https://dev.to/eminetto/creating-an-mcp-server-using-go-3foe) demonstrates how to use zip code to find address.
 
 # Tutorial
 * [MCP official tutorial](https://modelcontextprotocol.info/docs/tutorials/)
