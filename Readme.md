@@ -11,7 +11,10 @@ Following the above link to build a MCP server binary using golang. This one has
 ## simple python MCP server
 Follow this [link](https://github.com/modelcontextprotocol/python-sdk)
 ### Install
-To add a mcp server to vs code, follow [this](https://snyk.io/articles/how-to-add-a-new-mcp-server-to-vs-code/)
+To add a mcp server to vs code, follow [this](https://snyk.io/articles/how-to-add-a-new-mcp-server-to-vs-code/).
+#### install uv first to manage python project
+
+
 
 # Tutorial
 * [MCP official tutorial](https://modelcontextprotocol.info/docs/tutorials/)
