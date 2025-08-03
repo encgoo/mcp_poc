@@ -38,6 +38,12 @@ Then we just need to enter the server URL to the mcp.json.
 
 This one is easier, we can make sure that the server is running.
 
+## debug
+```bash
+uv run mcp dev main.py
+```
+This will start up a MCP inspector in a browser. It is convenient to test the tools explored by this MCP server first.
+
 # Usage
 For this particular example, we can just type in Copilot
 ```

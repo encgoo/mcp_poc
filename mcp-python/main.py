@@ -6,10 +6,12 @@ cd to the `examples/snippets/clients` directory and run:
 """
 
 from mcp.server.fastmcp import FastMCP
+from sqliteDB import DBAccess
 
 # Create an MCP server
 mcp = FastMCP("Demo")
 
+dbAccess = DBAccess("mwreqservices_default.db")
 
 # Add an addition tool
 @mcp.tool()
@@ -17,6 +19,25 @@ def add(a: int, b: int) -> int:
     """Add two numbers"""
     return a + b
 
+@mcp.tool()
+def count_reqsets() -> int:
+    """Count the number reqset in the database"""
+    return dbAccess.count_reqsets()
+
+@mcp.tool()
+def list_reqsets() -> list:
+    """List all reqsets in the database"""
+    return dbAccess.list_reqsets()
+
+@mcp.tool()
+def count_linkset() -> int:
+    """Count the number of link sets in the database"""
+    return dbAccess.count_linkset()
+
+@mcp.tool()
+def list_linkset() -> list:
+    """List all link sets in the database"""
+    return dbAccess.list_linkset()
 
 # Add a dynamic greeting resource
 @mcp.resource("greeting://{name}")
